@@ -1,0 +1,5 @@
+<app-header></app-header>
+<app-student (deleta_evento) = " remove_estudante($event)" *ngFor=" let student of students " [student] = "student"></app-student>
+<app-colocanome (estudanteevento) = "addStudent($event)"></app-colocanome>
+
+

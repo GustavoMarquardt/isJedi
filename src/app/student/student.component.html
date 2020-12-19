@@ -1,0 +1,14 @@
+<div *ngIf = "student">
+<div>
+    Student:{{student?.name}}
+    <div *ngIf=" student?.isJedi">
+      Jedi Templete: {{student?.temple}}
+    </div>
+</div>
+<button #deleta (click) ="envia_deleta()">
+  Delet
+</button>
+</div>
+<p *ngIf = "!student">
+   Sem dados para informar!
+</p>
